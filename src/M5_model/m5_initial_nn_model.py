@@ -1,6 +1,4 @@
 import random
-
-import numpy as np
 import pandas as pd
 import os
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
@@ -17,9 +15,6 @@ from sklearn.model_selection import train_test_split
 import warnings
 warnings.filterwarnings('ignore')
 pd.set_option('max_columns', None)
-import matplotlib.pyplot as plt
-import seaborn as sns
-plt.style.use('seaborn')
 random.seed(42)
 #--------------------------------------------------
 
@@ -105,11 +100,11 @@ hist = model.fit(X_train, y_train,validation_data=[X_valid,y_valid],
 
 cust_object={ 'rmse': rmse}
 
-model.save('model.h5')
+model.save('models/model.h5')
 score = model.evaluate(X_valid, y_valid, verbose=verbose)
 print("\nTest score:", score)
 
-model=tf.keras.models.load_model('model.h5',custom_objects=cust_object)
+model=tf.keras.models.load_model('models/model.h5',custom_objects=cust_object)
 y_pred=model.predict(X_eval)
 
 
