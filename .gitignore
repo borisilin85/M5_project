@@ -5,3 +5,5 @@
 /src/M5_project/data
 virtualenv
 **.ipynb
+/dist
+**-info
