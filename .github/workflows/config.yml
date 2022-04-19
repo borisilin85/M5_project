@@ -12,4 +12,5 @@ jobs:
     - name: Test
       run: |
         pytest
+        M5_project/
 
