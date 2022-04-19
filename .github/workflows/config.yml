@@ -1,0 +1,19 @@
+name: M5 python package
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: action1
+    - uses: actions/checkout@v3
+      with:
+        python-version: '3.7'
+    - name: Install pip
+      run: |
+        python -m pip install --upgrade pip
+    - name: Test
+      run: |
+        pytest
+
