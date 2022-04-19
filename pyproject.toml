@@ -1,3 +1,3 @@
 [build-system]
-requires = ["setuptools>=42","pandas>=1.2.3","scikit-learn>=0.22.1","tensorflow>=2.3.0"]
+requires = ["pytest","setuptools>=42","pandas>=1.2.3","scikit-learn>=0.22.1","tensorflow>=2.3.0"]
 build-backend = "setuptools.build_meta"
