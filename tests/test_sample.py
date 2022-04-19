@@ -1,5 +1,4 @@
 # content of test_sample.py
-import pytest
 
 
 def inc(x):
