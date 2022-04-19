@@ -13,6 +13,7 @@ setuptools.setup(name="M5 project",
                  python_requires='>=3.7',
                  project_urls={
                      "Git url": "https://github.com/borisilin85/M5_project",
-                 }
 
+                 },
+                install_requires = ['pytest']
                  )
