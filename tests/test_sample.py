@@ -1,4 +1,7 @@
 # content of test_sample.py
+import pytest
+
+
 def inc(x):
     return x + 1
 
